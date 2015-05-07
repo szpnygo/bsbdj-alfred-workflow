@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>info.smemo.alfred.bdj</string>
+	<key>connections</key>
+	<dict>
+		<key>EC3CFEE9-3868-40DF-9706-E6D381EFCAD8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15E572BF-E237-46C9-85A2-27396DD8FEFC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>neo</string>
+	<key>description</key>
+	<string>百思不得姐段子</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>百思不得姐</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>bdj</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在获取数据……</string>
+				<key>script</key>
+				<string>include_once 'alfred_bsbdj.php';
+bsbdj();
+
+</string>
+				<key>subtext</key>
+				<string>百思不得姐内涵段子</string>
+				<key>title</key>
+				<string>百思不得姐</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>EC3CFEE9-3868-40DF-9706-E6D381EFCAD8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>http://www.budejie.com/detail-{query}.html</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>15E572BF-E237-46C9-85A2-27396DD8FEFC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>百思不得姐段子
+
+Alfred Workflows
+
+Click the download buttons below
+Double-click to import into Alfred 2
+Review the workflow to add custom Hotkeys</string>
+	<key>uidata</key>
+	<dict>
+		<key>15E572BF-E237-46C9-85A2-27396DD8FEFC</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>EC3CFEE9-3868-40DF-9706-E6D381EFCAD8</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://blog.smemo.info</string>
+</dict>
+</plist>
